@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Store</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <header>
+        <nav class="flex px-4 gap-6 py-6 justify-between  items-center flex-wrap md:flex-wrap lg:flex-nowrap lg:w-[85%] lg:m-auto lg:items-center">
+            <div class="  order-1 w-[50%] lg:w-[25%] md:m-auto">
+                <img src="./image/logo.png" alt="" class="w-28">
+            </div>
+            <div class="order-3 flex-1 w-full mt-6 shadow-md rounded-md h-10 flex items-center md:flex-1 lg:order-2 lg:w-[80%] lg:mt-3">
+                <input type="text" placeholder="Search Product" class="flex-1 px-2  ml-1 outline-none border-none">
+                <button class="bg-secondary h-12 px-4 rounded-md shadow-md cursor-pointer">
+                    <img src="./image/baseline-search-24px.png" alt="" class="w-6">
+                </button>
+            </div>
+            <div class="order-2 flex items-center gap-4 lg:order-3 md:w-[30%] lg:w-auto">
+                <a href="#" class="flex flex-col mt-[-20px]" id="cart-btn">
+                    <span class="w-5 h-5 rounded-full text-primary font-semibold flex justify-center items-center shadow-md self-end bg-accent" id="count">0</span>
+                    <img src="./image/baseline-shopping_basket-24px.png" alt="" class="w-6">
+                </a>
+                <a href="#" id="user-btn">
+                    <img src="./image/baseline-account_circle-24px.png" alt="" class="w-6">
+                </a>
+                <a href="#" id="nav-btn">
+                    <img src="./image/baseline-menu-24px.png" alt="" class="w-6">
+                </a>
+            </div>
+        </nav>
+        <div class="flex md:m-auto lg:relative flex-col gap-4 mt-4 lg:flex-row-reverse">
+            <div class="lg:w-[80%] md:m-auto">
+                <img src="./image/hero.png" alt="">
+            </div>
+            <div  class="p-4  grid gap-4 place-items-center lg:place-items-start md:w-[85%] md:m-auto lg:w-[75%] lg:py-14 lg:px-16 lg:gap-6">
+                <h1 class="text-secondary text-4xl w-[80%] text-center font-semibold lg:text-left lg:w-[65%]">We are your Online eco floriest</h1>
+                <p class="text-secondary text-center lg:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tempora dolores minima ipsum, eos natus similique sed itaque. Dolorum illum magnam ad ipsam quibusdam quia iusto impedit doloremque neque consequuntur?</p>
+                <a href="#" class="bg-accent cursor-pointer z-20 px-4 py-2 text-xl uppercase text-primary font-medium rounded-md rounded-tr-2xl rounded-bl-2xl shadow-md hover:shadow-2xl transition-shadow ease-in-out">Explore</a>
+                <div class="mt-[-100px] ml-[-230px]">
+                    <img src="./image/Path 2015.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Shopping Cart-->
+        <div class="bg-primary shadow-md w-[85%] p-4  gap-4 absolute top-16 right-0 hidden md:w-[60%] lg:w-[40%]" id="cart">
+            <span class="cursor-pointer hover:shadow-xl transition-shadow ease-in-out  w-[10%] text-center" id="close-cart">
+                <img src="./image/baseline-close-24px.png" alt="">
+            </span>
+            <h1 class="text-secondary text-4xl font-medium">Shopping Cart</h1>
+            <div id="empty" class="hidden">
+                <h1 class="text-secondary text-6xl font-medium">Your Cart is Empty!</h1>
+            </div>
+            <div id="show-cart" class="mt-4">
+                
+            </div>
+
+            <div class="mt-6 flex justify-between items-center">
+                <h1 class="text-secondary text-2xl font-medium">Total Amount:</h1>
+                <h1 id="total" class="text-secondary text-xl font-semibold">$452.99</h1>
+            </div>
+            <button onclick="Checkout()" class="w-full mt-4 bg-secondary px-4 py-2 rounded-md shadow-md text-primary font-medium cursor-pointer hover:shadow-xl transition-shadow ease-linear">Checkout</button>
+        </div>
+     <!-- Close Shopping Cart-->
+      <!-- User login -->
+       <div class="bg-primary shadow-md w-[85%] p-4 gap-4 absolute top-16 right-0 hidden md:w-[60%] lg:w-[40%]" id="login">
+        <span class="cursor-pointer hover:shadow-xl transition-shadow ease-in-out  w-[10%] text-center" id="close-login">
+            <img src="./image/baseline-close-24px.png" alt="">
+        </span>
+        <div class="grid gap-2 place-items-center">
+            <h1 class="text-secondary font-semibold text-2xl capitalize">Login User</h1>
+            <span class="w-14 h-1  bg-accent shadow-sm"></span>
+        </div>
+        <div class="grid mt-4 gap-6">
+            <div class="flex flex-col gap-2">
+                <label for="User-email" class="text-secondary text-lg">User Email</label>
+                <input type="text" placeholder="Enter Email" class="border-2 border-slate-400 px-1 h-9 rounded-md shadow-md outline-slate-300">
+            </div>
+            <div class="flex flex-col gap-2">
+                <label for="user-password" class="text-secondary text-lg">User Password</label>
+                <input type="password" placeholder="Enter Password" class="border-2 border-slate-400 px-1 h-9 rounded-md shadow-md outline-slate-300">
+            </div>
+            <button class="bg-accent w-[35%] py-2 font-semibold text-primary text-lg m-auto rounded-md shadow-md hover:shadow-lg transition-shadow ease-in">Login</button>
+            <h1 class="text-secondary text-center font-medium">Create New Account. <a href="#" class="text-accent">Here</a></h1>
+        </div>
+       </div>
+       <!-- Close User Login-->
+        <!-- Navbar Section-->
+            <div  class="bg-primary shadow-md w-[85%] p-4 gap-4 h-screen absolute top-16 right-0 hidden md:w-[60%] lg:w-[40%]" id="navbar">
+                <span class="cursor-pointer hover:shadow-xl transition-shadow ease-in-out  w-[10%] text-center" id="close-nav">
+                    <img src="./image/baseline-close-24px.png" alt="">
+                </span>
+                <ul class="grid gap-6 place-items-center text-center">
+                    <li><a href="#" class="text-lg text-secondary font-semibold hover:text-accent my-4">Home</a></li>
+                    <li><a href="#" class="text-lg text-secondary font-semibold hover:text-accent my-4">Our Store</a></li>
+                    <li><a href="#" class="text-lg text-secondary font-semibold hover:text-accent my-4">About Us</a></li>
+                    <li><a href="#" class="text-lg text-secondary font-semibold hover:text-accent my-4">Contact Us</a></li>
+                    
+                </ul>
+            </div>
+         <!-- Close Navbar Section-->
+    <!--Our Product-->
+        <div class="p-4 mt-4">
+            <div class="grid gap-2 place-items-center">
+                <h1 class="text-secondary font-semibold text-2xl capitalize">Our Product</h1>
+                <span class="w-14 h-1  bg-accent shadow-sm"></span>
+            </div>
+            <div id="product" class="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 md:w-[95%] md:m-auto md:mt-6 lg:w-[85%] lg:m-auto lg:mt-6">
+                
+            </div>
+        </div>
+    <!--Close Our Product-->
+    <!-- Our Story-->
+        <div class="p-4 mt-6 flex gap-4 flex-col md:flex-row md:w-[85%] md:m-auto">
+            <div class="w-full">
+                <img src="./image/Story.jpg" alt="" class="w-full h-full">
+            </div>
+            <div class="grid gap-4 text-center md:w-[70%]">
+                <div class="grid gap-2 place-items-center">
+                    <h1 class="text-secondary font-semibold text-2xl capitalize">Our Story</h1>
+                    <span class="w-14 h-1  bg-accent shadow-sm"></span>
+                </div>
+                <p class="text-secondary text-sm font-medium opacity-85">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga perferendis asperiores, labore delectus ratione expedita voluptas saepe nesciunt ipsum deserunt sequi distinctio quos nemo voluptatem amet ab dolor illo alias, culpa adipisci blanditiis consequatur dignissimos et quae. Voluptatum aspernatur minima rerum accusantium nobis doloribus! Harum cum ducimus maiores sequi nam?</p>
+                <a href="#" class="bg-accent py-2 px-4 shadow-md text-primary font-semibold capitalize text-lg w-[35%] rounded-md m-auto hover:shadow-xl transition-shadow ease-in-out">Discover</a>
+                <div class="flex gap-4 items-center m-auto mt-4">
+                   <a href="#" class="hover:shadow-lg transition-shadow ease-in-out">  <img src="./image/facebook-f.png" alt="" class="w-4"></a>
+                   <a href="#" class="hover:shadow-lg transition-shadow ease-in-out">  <img src="./image/linkedin-in.png" alt="" class="w-6"></a>
+                   <a href="#" class="hover:shadow-lg transition-shadow ease-in-out">  <img src="./image/twitter.png" alt="" class="w-6"></a>
+                </div>
+            </div>
+        </div>
+     <!--Close Our Story-->
+     <!--Top Sells-->
+     <div class="p-4 mt-4">
+        <div class="grid gap-2 place-items-center">
+            <h1 class="text-secondary font-semibold text-2xl capitalize">Our Sells</h1>
+            <span class="w-14 h-1  bg-accent shadow-sm"></span>
+        </div>
+        <div id="sell" class="mt-6 grid grid-cols-1 gap-6 md:grid-cols-3  md:w-[85%] md:m-auto md:mt-6">
+           
+        </div>
+    </div>
+     <!--Close Top sells-->
+     <!--Subscribe-->
+        <div class="bg-accent opacity-70 mt-6 py-6 flex flex-col-reverse gap-4 px-4 md:flex-row md:items-center">
+            <div class="grid gap-4 mt-4 md:w-[50%]">
+                <h1 class="text-secondary text-4xl font-semibold w-[60%]">Subscribe Our Newsletter</h1>
+                <p class="text-lg text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam deleniti consequuntur, quas ullam accusantium error dolorum nam animi quaerat, ratione explicabo odio, quia nisi! Molestias vel culpa eaque et deserunt, aspernatur nostrum laudantium, assumenda optio eum dicta eveniet voluptate consequatur.</p>
+            </div>
+            <div class="bg-primary flex items-center h-10 rounded-md shadow-md md:w-[50%]">
+                <input type="text" placeholder="Enter your email" class="flex-1 ml-2 px-2 outline-none border-none">
+                <button class="bg-secondary h-12 px-4 opacity-100 shadow-lg text-primary font-medium uppercase cursor-pointer hover:shadow-xl transition-shadow ease-in-out">Subscribe</button>
+            </div>
+        </div>
+     <!-- Close Subscribe-->
+      <!--Footer-->
+        <footer class="mt-6">
+            <div class="border-b-2 border-b-stone-100 p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 place-items-center">
+                <div class="grid gap-4">
+                    <div>
+                        <img src="./image/logo.png" alt="" class="w-28">
+                    </div>
+                    <ul class="grid gap-4 place-items-center">
+                        <li><a href="#" class="text-lg text-secondary font-medium">Home</a></li>
+                        <li><a href="#" class="text-lg text-secondary font-medium">Our Store</a></li>
+                        <li><a href="#" class="text-lg text-secondary font-medium">About Us</a></li>
+                        <li><a href="#" class="text-lg text-secondary font-medium">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="grid gap-4 place-items-center mt-4">
+                    <h1 class="text-2xl font-semibold text-secondary">About Us</h1>
+                    <ul class="grid gap-4 place-items-center">
+                        <li><a href="#" class="text-lg text-secondary font-medium">Support Center</a></li>
+                         <li><a href="#" class="text-lg text-secondary font-medium">Customer Support</a></li>
+                         <li><a href="#" class="text-lg text-secondary font-medium">About Us</a> </li>
+                         <li><a href="#" class="text-lg text-secondary font-medium">Copy Right</a></li>
+                    </ul>
+                </div>
+
+                <div class="grid gap-4 place-items-center mt-4">
+                    <h1 class="text-2xl font-semibold text-secondary">Product</h1>
+                    <ul class="grid gap-4 place-items-center">
+                        <li><a href="#" class="text-lg text-secondary font-medium">Furniture</a></li>
+                         <li><a href="#" class="text-lg text-secondary font-medium">Watches</a></li>
+                         <li><a href="#" class="text-lg text-secondary font-medium">Book Product</a> </li>
+                         <li><a href="#" class="text-lg text-secondary font-medium">Electric</a></li>
+                    </ul>
+                </div>
+
+                <div class="grid gap-4 place-items-center mt-4 self-start">
+                    <h1 class="text-2xl font-semibold text-secondary">Social Network</h1>
+                    <div class="flex gap-6 items-center">
+                        <a href="#"><img src="./image/facebook-f.png" alt=""></a>
+                         <a href="#"><img src="./image/linkedin-in.png" alt=""></a>
+                          <a href="#"><img src="./image/twitter.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <h1 class="p-4 text-center text-secondary text-lg font-medium">Rashid Developer. All Right reserved</h1>
+        </footer>
+      <!--Close Footer-->
+
+      <script src="app.js"></script>
+</body>
+</html>

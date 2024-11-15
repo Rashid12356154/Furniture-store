@@ -1,0 +1,114 @@
+[
+    {
+        "id":1,
+         "img":"./image/product-1.jpeg",
+         "categorie":"product",
+         "title":"queen panel bed",
+         "dis":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam temporibus dicta placeat nulla atque ea veritatis autem natus ullam reiciendis.",
+         "price":10.99
+    },
+    {
+        "id":2,
+         "img":"./image/product-2.jpeg",
+         "categorie":"product",
+         "title":"king panel bed",
+         "dis":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam temporibus dicta placeat nulla atque ea veritatis autem natus ullam reiciendis.",
+         "price":12.99
+    },
+    {
+        "id":3,
+         "img":"./image/product-3.jpeg",
+         "categorie":"product",
+         "title":"single panel bed",
+         "dis":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam temporibus dicta placeat nulla atque ea veritatis autem natus ullam reiciendis.",
+         "price":12.99
+    },
+    {
+        "id":4,
+         "img":"./image/product-4.jpeg",
+         "categorie":"product",
+         "title":"twin panel bed",
+         "dis":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam temporibus dicta placeat nulla atque ea veritatis autem natus ullam reiciendis.",
+         "price":22.99
+    },
+    {
+        "id":5,
+         "img":"./image/product-5.jpeg",
+         "categorie":"product",
+         "title":"fridege",
+         "dis":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam temporibus dicta placeat nulla atque ea veritatis autem natus ullam reiciendis.",
+         "price":88.99
+    },
+    {
+        "id":6,
+         "img":"./image/product-6.jpeg",
+         "categorie":"product",
+         "title":"dresser",
+         "dis":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam temporibus dicta placeat nulla atque ea veritatis autem natus ullam reiciendis.",
+         "price":32.99
+    },
+    {
+        "id":7,
+         "img":"./image/product-7.jpeg",
+         "categorie":"product",
+         "title":"couch",
+         "dis":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam temporibus dicta placeat nulla atque ea veritatis autem natus ullam reiciendis.",
+         "price":45.99
+    },
+    {
+        "id":8,
+         "img":"./image/product-8.jpeg",
+         "categorie":"product",
+         "title":"table",
+         "dis":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam temporibus dicta placeat nulla atque ea veritatis autem natus ullam reiciendis.",
+         "price":33.99
+    },
+    {
+        "id":9,
+         "img":"./image/Sell1.jpg",
+         "categorie":"top sells",
+         "title":"wooden chair",
+         "dis":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam temporibus dicta placeat nulla atque ea veritatis autem natus ullam reiciendis.",
+         "price":18.99
+    },
+    {
+        "id":10,
+         "img":"./image/sell2.jpg",
+         "categorie":"top sells",
+         "title":"yellow  sofa",
+         "dis":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam temporibus dicta placeat nulla atque ea veritatis autem natus ullam reiciendis.",
+         "price":46.99
+    },
+    {
+        "id":11,
+         "img":"./image/sell3.jpg",
+         "categorie":"top sells",
+         "title":"Dark Wood chair",
+         "dis":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam temporibus dicta placeat nulla atque ea veritatis autem natus ullam reiciendis.",
+         "price":22.99
+    },
+    {
+        "id":12,
+         "img":"./image/sell4.jpg",
+         "categorie":"top sells",
+         "title":"study chair",
+         "dis":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam temporibus dicta placeat nulla atque ea veritatis autem natus ullam reiciendis.",
+         "price":12.99
+    },
+    {
+        "id":13,
+         "img":"./image/sell5.jpg",
+         "categorie":"top sells",
+         "title":"white decor sofa",
+         "dis":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam temporibus dicta placeat nulla atque ea veritatis autem natus ullam reiciendis.",
+         "price":65.99
+    },
+    {
+        "id":14,
+         "img":"./image/sell6.jpg",
+         "categorie":"top sells",
+         "title":"yellow  sofa",
+         "dis":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam temporibus dicta placeat nulla atque ea veritatis autem natus ullam reiciendis.",
+         "price":42.99
+    }
+]
